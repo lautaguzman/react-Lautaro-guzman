@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import { Nav } from './components/NavBar/NavBar.jsx';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
+import { ComponenteContainer } from './components/pages/ComponenteContainer/ComponenteContainer';
 
 
 function App() {
   return (
     <>
-      <Nav />
+      <ComponenteContainer />
     </>
+
   )
 }
 
 export default App
+
+
