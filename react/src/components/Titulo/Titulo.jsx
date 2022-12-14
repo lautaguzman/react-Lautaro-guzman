@@ -1,6 +1,7 @@
 import "./Titulo.css"
-export const Titulo = () => {
+const Titulo = () => {
     return (
-        <div>Tienda de camisetas Qatar 2022</div>
+        <div className="Titulo">Tienda de camisetas Qatar 2022</div>
     )
 }
+export default Titulo

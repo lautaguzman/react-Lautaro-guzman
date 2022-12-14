@@ -1,12 +1,16 @@
-import { Nav } from "../../NavBar/NavBar";
+
+import { ItemListContainer } from "../../ItemListContainer/ItemListContainer";
+import { NavBar } from "../../NavBar/NavBar";
 import { Titulo } from "../../Titulo/Titulo";
 
 export function ComponenteContainer() {
     return (
         <div>
-            <Titulo />
-            <Nav />
+            {/* <Titulo /> */}
+            {/* <NavBar /> */}
+            {/* <ItemListContainer /> */}
         </div>
+
     )
 }
 

@@ -1,15 +1,19 @@
-import { useState } from 'react'
+
+import Titulo from './components/Titulo/Titulo';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
+
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ComponenteContainer } from './components/pages/ComponenteContainer/ComponenteContainer';
 
 
 function App() {
   return (
     <>
-      <ComponenteContainer />
+      <Titulo />
+      <NavBar />
+      <ItemListContainer />
     </>
-
   )
 }
 
