@@ -1,33 +1,39 @@
-import { Container, Nav, Navbar, NavLink } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Link, NavLink } from 'react-router-dom'
+
+
 
 import "./NavBar.css"
 const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
+                <Link to='/'>
+                    <img
+                        alt=""
+                        src="/public/Logo LG.jpg"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />
+                </Link>
 
-                <img
-                    alt=""
-                    src="/public/Logo LG.jpg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                />
                 <Nav className="me-auto">
-                    <NavLink to="/category/camisetas">Camisetas</NavLink>
-                    <NavLink to="/category/pantalones" >Pantalones</NavLink>
-                    <Nav.Link href="producto 3">Producto 3</Nav.Link>
+                    <NavLink className='btn btn-primary' to='/category/camiseta'>Camisetas</NavLink>
+                    <NavLink className='btn btn-primary' to='/category/pantalon'>Pantalones</NavLink>
                 </Nav>
 
-                <img
-                    src="/public/Carrito.jpg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    alt=""
-                />
-            </Container>
-        </Navbar>
+
+                <Link to='/cart'>
+                    <img
+                        src="/public/Carrito.jpg"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt=""
+                    /></Link>
+            </Container >
+        </Navbar >
     )
 }
 export default NavBar
