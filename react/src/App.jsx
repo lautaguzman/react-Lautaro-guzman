@@ -5,28 +5,27 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './container/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './container/ItemDetailContainer/ItemDetailContainer';
 import CartContainer from './container/CartContainer/CartContainer';
-
+import { CartContextProvider } from './Context/CartContext';
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
-
-
 function App() {
   return (
     <BrowserRouter>
-      <Titulo />
-      <NavBar />
+      <CartContextProvider>
+        <Titulo />
+        <NavBar />
 
-      <Routes>
-        <Route path='/' element={<ItemListContainer />} />
-        <Route path='/category/:id' element={<ItemListContainer />} />
-        <Route path='/detalle/:productoId' element={<ItemDetailContainer />} />
-        <Route path='/cart' element={<CartContainer />} />
-        <Route path='*' element={<Navigate to='/' />} />
-      </Routes>
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/category/:id' element={<ItemListContainer />} />
+          <Route path='/detalle/:productoId' element={<ItemDetailContainer />} />
+          <Route path='/cart' element={<CartContainer />} />
+          <Route path='*' element={<Navigate to='/' />} />
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
   )
 }
