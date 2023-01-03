@@ -2,8 +2,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { collection, doc, getDoc, getDocs, getFirestore } from 'firebase/firestore'
-import gFetch from "../../helpers/gfetch";
+import { collection, getDoc, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import ItemList from "../../ItemList/ItemList";
 import Loading from "../../Loading/Loading";
 
@@ -17,23 +16,26 @@ const ItemListContainer = () => {
     const { id } = useParams()
 
     useEffect(() => {
+        const db = getFirestore()
+        const queryCollection = collection(db, 'productos')
 
         if (id) {
-            gFetch()
-                .then(resp => setProductos(resp.filter(prod => prod.categoria === id)))
+            const queryFiltrada = query(queryCollection, where('categoria', '==', id))
+            getDocs(queryFiltrada)
+                .then(res => setProductos(res.docs.map(producto => ({ id: producto.id, ...producto.data() }))))
                 .catch(error => (error))
                 .finally(() => setCargando(false))
+
         } else {
-            gFetch()
-                .then(resp => setProductos(resp))
+            getDocs(queryCollection)
+                .then(res => setProductos(res.docs.map(producto => ({ id: producto.id, ...producto.data() }))))
                 .catch(error => (error))
                 .finally(() => setCargando(false))
         }
-
-
     }, [id])
 
     return (
+
         <section>
             {cargando ?
                 <Loading />
@@ -45,3 +47,7 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer
+
+
+
+
