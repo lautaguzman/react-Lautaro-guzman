@@ -19,21 +19,3 @@ const Loading = () => {
 export default Loading
 
 
-// PARA TRAER TODOS
-// const db = getFirestore()
-// const queryCollection = collection(db, 'productos')
-// const queryFiltrada = query(queryCollection, where('categoria', '==', id))
-// getDocs(queryFiltrada)
-//     .then(data => setProductos(data.docs.map(producto => ({ id: producto.id, ...producto.data() }))))
-//     .catch(error => (error))
-//     .finally(() => setCargando(false))
-
-
-
-/*--------- PRODUcTOS TRAIDOS DESDE BASE DE DATOS de a 1 uno--------*/
-    // useEffect(() => {
-    //     const db = getFirestore()
-    //     const queryDoc = doc(db, 'productos', 'productoId')
-    //     getDoc(queryDoc)
-    //         .then(resp => setProductos({ id: resp.id, ...resp.data() }))
-    // }, [id])
