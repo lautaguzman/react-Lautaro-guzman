@@ -1,1 +1,101 @@
+ /* * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
 
+ .Card {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 50px;
+     width: 300px;
+     border: 2px solid black;
+     margin-bottom: 20px;
+ }
+
+ .Card img {
+     width: 250px;
+     height: 340px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
+     border: 1px solid black;
+ }
+
+ .Card-Info {
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 15px;
+
+ }
+
+ .Card-Info :hover {
+     background-color: darkred;
+ } */
+
+ /* 
+.body {
+    padding-top: 80px;
+    background-color: black;
+
+    font-family: serif;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor>div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(59, 1, 1, 0.397);
+    border-radius: 20px;
+}
+
+.contenedor>div :hover {
+    background-color: brown;
+}
+
+.contenedor img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.informacion {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.informacion button {
+    background-color: white;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.informacion button :hover {
+    background-color: black;
+} */

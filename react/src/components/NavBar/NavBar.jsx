@@ -11,7 +11,7 @@ const NavBar = () => {
         <Link to="/">
           <img
             alt=""
-            src="/public/Logo LG.jpg"
+            src="/dist/Logo LG.jpg"
             width="30"
             height="30"
             className="d-inline-block align-top"
