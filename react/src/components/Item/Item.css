@@ -1,4 +1,35 @@
- /* * {
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    margin: 50px;
+}
+
+/* .card img {
+   
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid black;
+   
+} */
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: brown;
+    text-align: center;
+}
+
+/* * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
@@ -36,7 +67,7 @@
      background-color: darkred;
  } */
 
- /* 
+/* 
 .body {
     padding-top: 80px;
     background-color: black;
