@@ -13,7 +13,7 @@ const NavBar = () => {
           <Link to="/">
             <img
               alt=""
-              src="/dist/Logo LG.jpg"
+              src="/public/LPF.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -29,13 +29,7 @@ const NavBar = () => {
         <h2 className="navbar-carrito">
           {" "}
           <Link to="/cart">
-            <img
-              src="/public/Carrito.jpg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt=""
-            />
+            <img src="/public/Carrito.jpg" width="30" height="30" />
             {cantidadTotal() !== 0 && cantidadTotal()}
           </Link>
         </h2>

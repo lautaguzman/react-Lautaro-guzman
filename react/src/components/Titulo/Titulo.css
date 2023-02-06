@@ -1,26 +1,20 @@
-/* .Titulo {
-  text-align: center;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHLsqfOQx5fCx_dRToeY8vTPelG6B-zSZyQ&usqp=CAU);
-  color: white;
-  font-size: 2rem;
-} */
-
 .Titulo {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(https://images5.alphacoders.com/128/1288612.jpg);
+    url(https://radiofonica.com/wp-content/uploads/2020/12/liga-profesional.jpg);
 }
 
+/* https://images5.alphacoders.com/128/1288612.jpg */
 .Titulo-container {
   text-align: center;
-  padding: 15% 0;
+  padding: 30% 0;
 }
 
 .Titulo h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 62px;
+  font-size: 50px;
 }
